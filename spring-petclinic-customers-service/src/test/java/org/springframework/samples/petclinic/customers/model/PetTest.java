@@ -26,3 +26,14 @@ public class PetTest {
         //Assert
         assertEquals("Call", pet.getOwner().getFirstName());
     }
+    @Test
+    public void testBirthDate(){
+        //Arrange
+        Pet pet = new Pet();
+        Date bd = new Date();
+        //Act
+        pet.setBirthDate(bd);
+        //Assert
+        assertEquals(bd,pet.getBirthDate());
+    }
+}
